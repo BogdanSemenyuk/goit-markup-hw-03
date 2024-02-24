@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
@@ -8,8 +12,40 @@ a {
 }
 ul, ol {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
+.container {
+    width: 1128px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    border-bottom: 1px solid #E7E9FC;
+}
+
+img {
+    display: block;
+}
+
 /* ========== Page Header Styles ========== */
+
+.header-container { 
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -17,7 +53,13 @@ ul, ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
     line-height: 1.17
+}
+
+.navigation-list{   
+    display: flex;
+    gap: 40px;
 }
 .logo-part {
     color: #2e2f42;
@@ -28,6 +70,7 @@ ul, ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    display: block;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -36,7 +79,14 @@ ul, ol {
 
 .address {
     font-style: normal;
+    margin-left: auto;
 }
+
+.address-list {
+    display: flex;
+    gap: 40px;
+}
+
 .address-link {
     font-size: 16px;
     line-height: 1.5;
@@ -55,7 +105,17 @@ ul, ol {
 /* ========== Page Hero styles ========== */
 
 .hero-section {
-    background-color: #2e2f42; 
+    background-color: #2e2f42;
+    width: 1440px;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+.hero-container{
+    padding-left: 459px;
+    padding-right: 485px;
+    padding-top: 186px;
+    padding-bottom: 294px;
+    max-width: 496px; 
 }
 .hero-title {
     font-weight: 700;
@@ -64,6 +124,9 @@ ul, ol {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 .hero-button {
     background: #4d5ae5;
@@ -73,6 +136,8 @@ ul, ol {
     letter-spacing: 0.04em;
     color: #fff;
     cursor: pointer;
+    min-width: 169px;
+    height: 56px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -81,12 +146,34 @@ ul, ol {
 /* ========== /Page Hero styles ========== */
 
 /* ========== Page Section Strategy styles ========== */
+.section-strategy{
+    margin-top: 127px;
+    margin-bottom: 120px;
+}
+.strategy-list{
+    display: flex;
+    gap: 24px;
+    width: calc((100%-30)/4);
+}
+.strategy-title{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
 .title-list {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .text-list {
     font-size: 16px;
@@ -98,10 +185,16 @@ ul, ol {
 
 /* ========== Page Section Our team styles ========== */
 .section-team {
-    background-color: #F4F4FD
+    background-color: #F4F4FD;
+    margin-bottom: 120px;
 }
 .section-team-list {
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    margin-bottom: 120px;
+}
+.team-list{
+    display: flex;
+    gap: 24px;
 }
 .team-title {
     font-weight: 700;
@@ -111,6 +204,8 @@ ul, ol {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 .name-employee-list {
     font-weight: 500;
@@ -119,12 +214,15 @@ ul, ol {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    padding-top: 32px;
+    padding-bottom: 8px;
 }
 .position-employee-list {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    padding-bottom: 32px;
 }
 /* ========== /Page Section Our team styles ========== */
 
@@ -139,6 +237,10 @@ ul, ol {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+}
+.portfolio-list{
+    display: flex;
+    
 }
 .services-title-list {
     font-weight: 500;
@@ -160,6 +262,13 @@ ul, ol {
 .footer {
     background-color: #2e2f42;
 }
+.container-footer{
+    width: 264px;
+    padding-top: 100px;
+    padding-left: 156px;
+    margin-top: 120px;
+    padding-bottom: 100px;
+}
 .logo-part-footer {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -174,4 +283,5 @@ ul, ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    padding-top: 16px;
 }
