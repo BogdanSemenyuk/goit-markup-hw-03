@@ -85,7 +85,6 @@ img {
 
 .address {
     font-style: normal;
-    padding-bottom: 24px;
 }
 
 .address-list {
@@ -98,6 +97,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-bottom: 24px;
 }
 .address-link:hover,
 .address-link:focus {
