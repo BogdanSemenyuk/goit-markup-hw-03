@@ -71,12 +71,13 @@ img {
     color: #2e2f42;
 }
 .nav-link {
-    color: #2E2F42;
-    font-style: normal;
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: flex;
+    color: #2e2f42;
+    padding: 24px 0;
+    display: block;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -85,14 +86,15 @@ img {
 
 .address {
     font-style: normal;
+    margin-left: auto;  
 }
-
 .address-list {
     display: flex;
     gap: 40px;
+
 }
-.adress-list-item {
-    padding: 24px 0;
+.adress-list-item{
+    margin: 24px 0;
 }
 .address-link {
     line-height: 1.5;
